@@ -1,0 +1,18 @@
+.nav {
+  margin-bottom: 32px;
+}
+
+.nav__container {
+  @include spaceBetween;
+  @include verticalCenter;
+}
+
+.nav__link--hide {
+  display: none;
+}
+
+@include devices(tablet) {
+  .nav__container {
+    @include center;
+  }
+}
