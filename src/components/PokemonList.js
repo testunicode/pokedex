@@ -20,7 +20,7 @@ const PokemonList = () => {
 
     useEffect(() => {
         const loadPokemons = () => {
-            axios.get(`https://pokeapi.co/api/v2/pokemon?limit=4&offset=${offset.current}`)
+            axios.get(`https://pokeapi.co/api/v2/pokemon?limit=8&offset=${offset.current}`)
                 .then(function (allpokemon) {
                     allpokemon.data.results.forEach(function (pokemon) {
                         fetchPokemonData(pokemon);
